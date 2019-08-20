@@ -7,8 +7,8 @@ class Main
   public $rmindr35;
   public $num;
   
-public  function index(){
-      for($i =1; $i <=100;$i++)
+public  function index($fromnum=1,$tonum=100){
+      for($i =$fromnum; $i <=$tonum;$i++)
       {
           $this->num = $i;
           $this->rmindr3  = $this->getremin($i,3);
@@ -47,4 +47,5 @@ public  function index(){
 
 $newobj=new main();
 $newobj->index();
+//$newobj->index(50,100);
 ?>
