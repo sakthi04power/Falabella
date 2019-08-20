@@ -41,6 +41,10 @@ public  function index(){
             default:
                 echo $this->num;
         }
+    echo "</br>";
     }
 }
+
+$newobj=new main();
+$newobj->index();
 ?>
